@@ -8,10 +8,18 @@ const greenBtn = document.querySelector(".green");
 const resetBtn = document.querySelector(".reset");
 
 const body = document.querySelector("body");
+const header = document.querySelector("header");
 
 // Functions
+
+// Changes the background color
 function changeBackgroundColor(color) {
   body.style.backgroundColor = color;
+
+  // Changing header style dynamically
+  backgroundColor === "blue" || backgroundColor === "green"
+    ? (header.style.color = "#FFFFFF")
+    : (header.style.color = "#000000");
 }
 
 // Handling click events for each button

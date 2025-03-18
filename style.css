@@ -1,0 +1,27 @@
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: solid #000000 2px;
+  border-radius: 1rem;
+  width: 10%;
+}
+
+.yellow {
+  background-color: yellow;
+  color: #000000;
+}
+
+.blue {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.red {
+  background-color: red;
+  color: #000000;
+}
+
+.green {
+  background-color: green;
+  color: #ffffff;
+}
