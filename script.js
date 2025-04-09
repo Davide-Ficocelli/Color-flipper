@@ -11,6 +11,13 @@ const randomBtn = document.querySelector(".random");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 
+// Colors for the buttons
+const yellowColor = "rgb(255, 255, 0)";
+const blueColor = "rgb(0, 0, 255)";
+const redColor = "rgb(255, 0, 0)";
+const greenColor = "rgb(0, 255, 0)";
+const resetColor = "#FFFFFF";
+
 // Functions
 
 // Changes the background color
@@ -31,22 +38,16 @@ function setRandomColor() {
 // Handling click events for each button
 yellowBtn.addEventListener(
   "click",
-  changeBackgroundColor.bind(null, "rgb(255, 255, 0)")
+  changeBackgroundColor.bind(null, yellowColor)
 );
 
-blueBtn.addEventListener(
-  "click",
-  changeBackgroundColor.bind(null, "rgb(0, 0, 255)")
-);
+blueBtn.addEventListener("click", changeBackgroundColor.bind(null, blueColor));
 
-redBtn.addEventListener(
-  "click",
-  changeBackgroundColor.bind(null, "rgb(255, 0, 0)")
-);
+redBtn.addEventListener("click", changeBackgroundColor.bind(null, redColor));
 
 greenBtn.addEventListener(
   "click",
-  changeBackgroundColor.bind(null, "rgb(0, 255, 0)")
+  changeBackgroundColor.bind(null, greenColor)
 );
 
 resetBtn.addEventListener("click", changeBackgroundColor.bind(null, "#FFFFFF"));
